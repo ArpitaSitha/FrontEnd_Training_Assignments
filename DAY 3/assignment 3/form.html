@@ -1,0 +1,97 @@
+<html>
+    <head>
+    <title>CREDIT CARD FORM</title>
+    <style>
+        legend{
+            text-align: center;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: 400;
+           font-style: italic;
+           font-size: larger;
+        }
+        span{
+            font-size: small;
+        }
+        .button{
+        background-color: rgb(165, 175, 175);
+        height: 50px;
+        width: 250px;
+        
+    }
+       
+    </style>
+    </head>
+    
+
+
+<body>
+
+
+<form>
+  
+    <fieldset style="width: fit-content; background-image: url(credit.jpg); opacity:0.9;">
+        <legend>CREDIT CARD FORM</legend>
+        
+<input type="radio" id="x" name="x" value="CREDIT CARD"/> CREDIT CARD (Visa, Mastercard)
+<img src="visa.png" alt="visa" height="30px" width="60">
+<img src="mastercard.png " alt="mastercard" height="30px" width="60" >
+<input type="radio" id="x" name="x" value="PAY PAL"/> PAY PAL
+<img src="PAYPAL.png" alt="paypal" height="30px" width="60">
+<BR/>
+<BR/><BR/>
+
+CARD NUMBER
+<span>(The 16 digits on front of your card)</span>
+<br/> <textarea name="a" id="a" cols="60" rows="2"></textarea>
+<br/><BR/>
+<BR/>
+EXPIRATION DATE
+<BR/>
+<select id="b" name="b">
+    <option>JANUARY</option>
+    <option>FEBRUARY</option>
+    <option>MARCH</option>
+    <option >APRIL</option>   
+    <option>MAY</option>
+    <option>JUNE</option>
+    <option>JULY</option>
+    <option>AUGUST</option>
+    <option >SEPTEMBER</option>   
+    <option>OCTOBER</option>
+    <option >NOVEMBER</option>   
+    <option>DECEMBER</option>
+</select>  /
+<select id="b" name="b">
+    <option>2023</option>
+    <option>2024</option>
+    <option>2025</option>
+    <option >2026</option>   
+    <option>2027</option>
+    <option>2028</option>
+    <option>2029</option>
+    <option>2030</option>
+</select>  
+
+CVV2/CVC2
+
+<input type="password" id="x" name="x" value="PAY PAL" maxlength="3"/> 
+<br/>
+<br/>
+<br/>
+FULL NAME ON A CARD:<br/>
+<textarea name="xx" id="xx" cols="60" rows="2"></textarea>
+<BR/>
+<BR/>
+<BR/>
+
+<center>
+<input class="button" type="submit" value="COMPLETE TRANSACTION" />
+
+</center>
+       
+    </fieldset>
+    
+</form>
+
+</body>
+</html>
