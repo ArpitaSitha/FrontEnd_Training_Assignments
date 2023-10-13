@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <form>
+            <label>Product Name:
+            </label>
+            <input type="text" name="pname" id="pname"/>
+            <br/>
+            <br/>
+            <label>Unit Price:
+            </label>
+            <input type="text" name="uprice" id="uprice"/>
+            <br/>
+            <br/>
+            <label>Quantity:
+            </label>
+            <input type="text" name="qnty" id="qnty" />
+            <br/>
+            <br/>
+            <input type="button" onclick="Submit()" value="Get Total"/>
+            <p>Total:
+            </p>
+            <span id="Result"></span>
+        </form>
+        
+        <script>
+            function Submit()
+            {  
+                var UP= document.getElementById("uprice").value;
+           var Quan= document.getElementById("qnty").value;
+           document.getElementById("Result").innerHTML = UP*Quan;
+
+          
+        }
+            
+        </script>
+    </body>
+</html>
