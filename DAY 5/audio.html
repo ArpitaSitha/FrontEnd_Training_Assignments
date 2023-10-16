@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <audio id="audio" src="Dandelions(PaglaSongs).mp3"  loop>
+        </audio>
+        <p>Click the buttons to play or pause the audio.</p>
+
+<button onclick="playAudio()" type="button">Play </button>
+<button onclick="pauseAudio()" type="button">Pause </button> 
+    </body>
+    <script>
+    var x = document.getElementById("audio");
+
+function playAudio() {
+  x.play();
+}
+
+function pauseAudio() {
+  x.pause();
+}
+</script>
+</html>
