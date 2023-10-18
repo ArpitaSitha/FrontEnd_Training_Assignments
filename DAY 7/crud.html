@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/css/foundation.min.css" />
+        <style>
+            body{
+                text-align: center;
+            }
+            DIV{ border: 2px solid blue;
+               
+                padding: 20PX;
+                margin:  20PX;
+               
+            }
+        </style>
+
+    </head>
+    <body>
+        <
+        <form method="get" autocomplete="off">
+            <DIV>
+            EMPLOYEE NUMBER <BR/>
+            <input type="number" autofocus id="enum" name="enum"> <BR/>
+            EMPLOYEE NAME <br/>
+            <input type="text" id="ename" name="ename"> <BR/>
+            EMPLOYEE ROLE <br/>
+            <input type="text" id="role" name="role"> 
+            <a class="button large" href="create.html">CREATE </a>
+            <a class="button large" href="read.html">READ </a>
+            <a class="button large" href="update.html">UPDATE</a>
+            <a class="button large" href="delete.html">DELETE</a>
+            <input type="submit"  value="SUBMIT TO SERVER"  class="button expanded success"  formaction="submit.html" />
+        </DIV>
+        </form>
+    </body>
+</html>

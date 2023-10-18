@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            
+            span{
+                color: red;
+            }
+
+        </style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/css/foundation.min.css" />	
+    </head>
+    <body>
+        
+        
+        <h1 style="text-align: center;">BANK ACCOUNT OPENING FORM</h1>
+        <HR/>
+        <form action="" method="get" autocomplete="off">
+            
+            <div>
+            NAME ON ACCOUNT <span>*</span><br/>
+            <input type="text" name="name" id="name" placeholder="First Name" required><br/><br/>
+            <input type="text" name="name" id="name" placeholder="Middle Name"><br/><br/>
+            <input type="text" name="name" id="name" placeholder="Last Name"><br/><br/>
+            ACCOUNT NUMBER <span>*</span><br/>
+            <input type="number" name="number" id="number" autofocus required><br/><br/>
+            ACCOUNT TYPE <br/><br/>
+            <input type="radio" name="type" value="CURRENT ACCOUNT"> CURRENT ACCOUNT
+            <input type="radio" name="type" value="SAVINGS ACCOUNT"> SAVINGS ACCOUNT
+            <br/><br/>
+            ADDRESS<span>*</span>
+            <br/><br/>
+            <textarea cols="80" rows="3" placeholder= "Please enter full address" required>
+           
+            </textarea><br/><br/>
+            <input type="text" name="city" id="city" placeholder="city"><br/><br/>
+            <input type="text" name="state" id="state" placeholder="state"><br/><br/>
+            <input type="text" name="pincode" id="pincode" placeholder="pincode"><br/><br/>
+            OCCUPATION
+            <BR/>
+            <BR/>
+            <select>
+                <option>PRIVATE SECTOR</option>
+                <option>PUBLIC SECTOR</option>
+            </select>
+            <BR/>
+            <BR/>
+            PHONE NUMBER:<span>*</span>
+            <br/><br/>
+            <select>
+                <option>HOME</option>
+                <option>PRIMARY</option>
+                    <option>SECONDARY</option>
+                
+            </select><br/><br/>
+
+            <input type="text" name="num" id="num"  required><br/><br/>
+            <input type="submit"  value="SUBMIT"  class="button expanded "  formaction="submit.html" />
+            <br/><br/>
+
+            <span>*</span><input type="checkbox" id="cb1" />I agree to terms and conditions
+        </div>
+    
+              </form>
+    
+
+    </body>
+</html>
