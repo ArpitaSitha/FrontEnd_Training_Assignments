@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MODAL</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"> 
+	
+        
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    </head>
+    <body>
+<button type="button" class="btn btn-primary"  
+                      data-bs-toggle="modal" 
+                      data-bs-target="#d1">SHOW LOGIN</button>
+ <div class="modal" id="d1">
+    <div class="modal-dialog">
+    <div class="modal-content">
+
+
+        <div class="modal-header" >
+            <h4 class="modal-title">LOGIN PAGE</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+
+        </div>
+        <div class="modal-body">
+            <form action="submit.php">
+            USERNAME:
+            <input type="text" id="uname" name="uname"><br><br>
+            PASSWORD:
+            <input type="password" id="pw" name="pw">
+
+        </form>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+            <button type="button"  onclick="fn_clickevent()" class="btn btn-primary">Login</button>
+          </div>
+
+    </div>
+</div>
+ </div>                     
+
+    </body>
+</html>
+<script>  
+    
+    function fn_clickevent(){
+        
+            var name = document.getElementById("uname");
+            var password = document.getElementById("pw");
+ 
+            if(name.value != "Arpita" || password.value != 'arpita123')
+            {
+                alert("ERROR");
+            }
+            else{
+                alert("Welcome" +" " + name.value)
+            }
+ 
+        }
+   
+
+   
+</script>
