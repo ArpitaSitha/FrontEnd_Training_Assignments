@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <body>
+    <form>
+        <label>FIRST NUMBER:
+        </label>
+        <input type="number" name="fn" id="fn"/>
+        <br/>
+        <br/>
+        <label>SECOND NUMBER:
+        </label>
+        <input type="number" name="sn" id="sn"/>
+        <br/>
+        <br/>
+
+        <button type="button" onclick="fn_operation(event)" value="add">ADD</button>
+        <button type="button" onclick="fn_operation(event)" value="subtract">SUBTRACT</button>
+        <button type="button" onclick="fn_operation(event)" value="multiply">MULTIPLY</button>
+        <button type="button" onclick="fn_operation(event)" value="divide">DIVIDE</button>       
+        <br/>
+       
+    </form>
+    <p id="p1"></p>
+</body>
+
+
+<script>
+    
+   
+   function fn_operation(event)
+   {var fno= document.getElementById("fn").value;
+   var sno= document.getElementById("sn").value;
+   var paraObj=document.getElementById("p1");
+
+  
+
+var result=0;
+
+ switch(event.target.value)
+ {
+    case "add": result=parseInt(fno)+ parseInt(sno) ;
+    break;
+    case "subtract": result=fno-sno;
+    break;
+    case "multiply":result= fno*sno;
+    break;
+    case "divide": result=fno/sno;
+    
+    break;
+ }
+
+
+paraObj.innerHTML=`RESULT=${result}`
+
+
+
+
+
+
+  /*if( event.target.value==add)
+  {
+ 
+  }
+  else if ( event.target.value==subtract)
+  {
+ 
+  }
+  else if ( event.target.value==multiply)
+  {
+   
+  }
+  else if ( event.target.value==divide)
+  {
+    
+  }
+   */
+}
+
+</script>
+</HTML>

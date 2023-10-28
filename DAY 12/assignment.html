@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1> JAVSCRIPT CODE</h1>
+        <form>
+
+        
+        <fieldset>
+            
+        <legend>USER LOGIN</legend>
+     USER NAME:   <input type="text" name="uname" id="uname"><br/><br/>
+     PASSWORD:      <input type="password" name="pw" id="pw"><br/><br/>
+     
+     <button type="button" id="btn" name="btn" onclick="fn_validate()" value="LOGIN">LOGIN</button>
+    </fieldset>
+</form>
+<p id="p1"></p>
+    </body>
+<script>
+
+function fn_validate()
+{
+    var txtObj1= document.getElementById("uname");
+    var txtObj2= document.getElementById("pw");
+    var paraObj= document.getElementById("p1");
+
+    paraObj.innerText="";
+
+
+    if (txtObj1.value!="admin" || txtObj2.value!= "admin123")
+    {
+        paraObj.innerText="Invalid user Id or password";
+        paraObj.style.color="red";
+        
+    }
+    else{
+        paraObj.innerText="Welcome to admin";
+        paraObj.style.color="green";
+    }
+
+
+            }
+    
+</script>
+
+
+</html>
