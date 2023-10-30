@@ -1,0 +1,90 @@
+
+<html>
+    <head>
+        <style>
+            #div1
+{ background-color: aliceblue;
+    border:4px double black;
+}
+#div2
+{ background-color: antiquewhite;
+    border:4px double black;
+}
+#div3
+{ background-color: azure;
+    border:4px double black;
+}
+        </style>
+    </head>
+    <body>
+
+        <button type="button"  value="even" onclick="fn_showEvenNo()" > EVEN NO</button>
+        <div id="div1">
+            
+        </div>
+<BR>
+    <BR>
+        <button type="button"  value="power" onclick="fn_showPower()" >POWER </button>
+        <div id="div2">
+            ENTER X:<input type="number" id="no1" name="no1" ><BR><BR>
+                ENTER Y: <input type="number" id="no2" name="no2">
+        </div>
+<br>
+<br>
+
+
+<button type="button"  id="str2"  onclick="fn_countWords()">COUNT WORDS</button>
+<div id="div3">
+    INPUT TEXT:
+    <input type="text" id="str1" ><BR>
+
+
+</div>
+
+
+    </body>
+</html>
+<script>
+function fn_showEvenNo()
+{ var divObj=document.getElementById("div1");
+var numArray=[12,13,4,3,7,9];
+for (let i=0; i<numArray.length; i++)
+{
+    if (numArray[i]%2==0)
+    {
+divObj.innerHTML= `${divObj.innerText} <BR>  ${numArray[i]}`;
+    }
+}
+
+
+}
+
+
+
+function fn_showPower()
+{  var txtObj1= document.getElementById("no1").value;
+ var txtObj2= document.getElementById("no2").value;
+    var divObj = document.getElementById("div2");
+
+var result=Math.pow(txtObj1,txtObj2);
+divObj.innerText=result;
+}
+
+function fn_countWords()
+{
+    
+        var strObj=document.getElementById("str1");
+            var strObj2=document.getElementById("str2");
+            var paraObj=document.getElementById("div3");
+            var string= strObj.value.split(" ").length;
+           
+           
+              paraObj.innerHTML=string;
+             
+    
+}
+
+
+
+
+</script>

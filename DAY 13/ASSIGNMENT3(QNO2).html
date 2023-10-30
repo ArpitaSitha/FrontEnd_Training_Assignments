@@ -1,0 +1,69 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <button type="button" value="showdata" onclick="fn_showdata1()">SHOW DATA1</button>
+        <button type="button" value="showdata2" onclick="fn_showdata2()">SHOW DATA2</button>
+        <button type="button" value="showdata3" onclick="fn_showdata3()">SHOW DATA3</button>
+        <table id="table1" border="4px double black" width="100%">
+            <tr>
+                <th>EMPLOYEE NO</th>
+                <th>ENAME</th>
+                <th>JOB</th>
+                <th>SALARY</th>
+                <th>DEPARTMENT NO</th>
+            </tr>
+
+        </table>
+    </body>
+    <script>
+        var tableObj= document.getElementById("table1");
+        function fn_showdata1()
+
+       { 
+        //OBJECT INITIALIZER
+        var s1= {empno:101, ename:"MAX" , job:"Associate Analyst", salary:30000, deptno:4};
+       
+        var str = `<tr><td> ${s1.empno} </td><td>  ${s1.ename}</td><td> ${s1.job} </td><td> ${s1.salary} </td><td> ${s1.deptno}</td></tr>`;
+       
+       tableObj.innerHTML+=str;
+       
+       
+       }
+
+       function fn_showdata2()
+       {
+        // EMPTY OBJECT
+        var s2= {};
+        s2.empno=102;
+         s2.ename="SMITH";
+s2.job=" Analyst";
+s2.salary=300000;
+s2.deptno=40;
+var str = `<tr><td> ${s2.empno} </td><td>  ${s2.ename}</td><td> ${s2.job} </td><td> ${s2.salary} </td><td> ${s2.deptno}</td></tr>`;
+       
+tableObj.innerHTML+=str;
+       }
+       
+
+       //constructor function
+       function fn_details()
+       {
+        this.empno=109;
+        this.ename="ANNA";
+        this.job= "Analyst";
+        this.salary=900000;
+        this.deptno=5;
+       }
+       function fn_showdata3()
+       {var s3 =new fn_details();
+       var str = `<tr><td> ${s3.empno} </td><td>  ${s3.ename}</td><td> ${s3.job} </td><td> ${s3.salary} </td><td> ${s3.deptno}</td></tr>`;
+       tableObj.innerHTML+=str;}
+       
+    </script>
+   
+</html>
+
+
+

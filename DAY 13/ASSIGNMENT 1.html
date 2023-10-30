@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+
+<button type="button" onclick="fn_showdata()" value="showData">SHOW DATA</button><br><br>
+<table id="table1" border="2px" width="300px">
+    
+    
+</table>
+<script>
+
+
+function fn_showdata()
+{
+var array=['HTML5','CSS3','jQuery','Angular JS', 'Bootstrap'];
+var tableObj= document.getElementById("table1");
+
+var str="";
+
+for(let i in array)
+{  
+    let n = parseInt(i)+1;
+    str= str + "<tr><td>" + n + "</td>"+"<td>" + array[i] + "</td></tr>";
+}
+tableObj.innerHTML= str;
+}
+
+
+</script>
+</body>
+</html>
