@@ -1,0 +1,60 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <table id="myTable" border="2px double black" width="100%" >
+
+        </table>
+    </body>
+    <script>
+      
+{
+    var empArray =   [ 
+             
+{id:1,email:"george.bluth@reqres.in",first_name:"George",avatar:"https://reqres.in/img/faces/1-image.jpg"}, 
+{id:2,email:"janet.weaver@reqres.in",first_name:"Janet",avatar:"https://reqres.in/img/faces/2-image.jpg"},
+{id:3,email:"emma.wong@reqres.in",first_name:"Emma",avatar:"https://reqres.in/img/faces/3-image.jpg"},
+{id:4,email:"eve.holt@reqres.in",first_name:"Eve",avatar:"https://reqres.in/img/faces/4-image.jpg"},
+{id:5,email:"charles.morris@reqres.in",first_name:"Charles",avatar:"https://reqres.in/img/faces/5-image.jpg"},
+{id:6,email:"tracey.ramos@reqres.in",first_name:"Tracey",avatar:"https://reqres.in/img/faces/6-image.jpg"}
+
+]
+
+var tableObj= document.getElementById("myTable");
+
+
+
+for(let item of empArray)
+                {
+                    var imgObj =document.createElement("img");
+                    imgObj.setAttribute("src",item.avatar); 
+                var row1=tableObj.insertRow(-1);
+
+var cell1=row1.insertCell(-1);
+var cell2=row1.insertCell(-1);
+var cell3=row1.insertCell(-1);
+var cell4=row1.insertCell(-1);
+
+cell1.innerText=item.id;
+cell2.innerText=item.first_name;
+cell3.innerText=item.email;
+cell4.appendChild(imgObj);
+
+                }
+                console.log("item.id");
+
+}
+
+    </script>
+</html>
+
+ 
+
+
+    
+
+
+
+
+

@@ -1,0 +1,26 @@
+<!DOCTYPE html><html><body>
+
+</body></html>
+<script>
+    var x=5*"123";
+    console.log(x); //615
+    var y=5*"123Hello";
+    console.log(y);  //NAN
+    var z=5*"Hello123";
+    console.log(z);  //NAN
+    var a=5*"Hello123Hello";
+    console.log(a);  //NAN
+    
+
+
+
+    var p=parseInt("123");
+    console.log(p);      //123
+    var q=parseInt("123Hello");
+    console.log(q);      //123
+    var r=parseInt("Hello123");
+    console.log(r);       //NAN
+    var s=parseInt("Hello123Hello");
+    console.log(s);       //NAN
+
+</script>

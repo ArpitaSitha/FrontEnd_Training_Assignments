@@ -1,0 +1,32 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        
+        <div id="master">
+
+        </div>
+    
+    <script>
+
+var divObj =document.getElementById("master");
+var paraObj=document.createElement("p");
+paraObj.setAttribute("id","p1");
+paraObj.setAttribute("align", "center");
+paraObj.innerText="HELLO WORLD";
+divObj.appendChild(paraObj);
+paraObj.style.color="red";
+
+
+var imgObj =document.createElement("img");
+imgObj.src="gg.jpg"; //imgObj.setAttribute("src","gg.jpg")
+imgObj.setAttribute("width","100%");
+
+divObj.appendChild(imgObj);
+
+        
+</script>
+
+</body>
+</html>
