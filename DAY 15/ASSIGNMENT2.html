@@ -1,0 +1,38 @@
+<html>
+<head>
+    
+    </head>
+   
+<body>
+
+    <button onclick="DisplayNumber()">Get Number</button>
+    <p id="num"></p>
+   
+</body>
+<script>
+    function generateNumber()
+     {
+       const promise=new Promise((resolve,reject)=>
+         {
+            var num = Math.round(Math.random() * 50) ;
+           
+           
+            if (num % 5 === 0) {
+                resolve(num);
+            } else {
+                reject("Not a multiple of 5");
+            };
+        }); return promise;
+    }
+    function DisplayNumber() {
+        generateNumber() .then(num=>
+            {
+                document.getElementById("num").innerHTML = `Random number is: ${num}`;
+             }) 
+             .catch(error =>
+                { document.getElementById("num").innerHTML = ` Not multiple of 5`;
+ 
+            });
+    }
+</script>
+</html>

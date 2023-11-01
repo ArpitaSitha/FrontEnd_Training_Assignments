@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+
+        <form>
+
+NAME: <input type="text" name="uname" id="uname" > <br>
+<br>
+CONTACT: <input type="number" name="phno" id="phno"><br>
+<br>
+<button type="button" id="btn1" name="btn1" onclick="getData()">ADD FRIEND</button>
+<button type="button" id="btn" name="btn" onclick="showData()">GET CONTACT NUMBER</button>
+
+        </form>
+    </body>
+    <script>
+
+
+var txtObj3= document.getElementById("uname");
+var txtObj4= document.getElementById("phno");
+var mapObj= new Map();
+
+
+function getData()
+{
+    mapObj.set(txtObj3.value,txtObj4.value);
+    console.log(mapObj);
+}
+function showData()
+{
+     txtObj4.value=mapObj.get(txtObj3.value);
+     console.clear();
+
+}
+
+
+
+        </script>
+
+
+</html>
