@@ -1,0 +1,29 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+<center>
+        <img id="img1" height="100%" width="50%">
+    </center>
+        
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script>
+
+var images=["ad1.jpg", "ad2.jpg","ad3.jpg","ad5.png"];
+           
+         $(document).ready(function() 
+             {setInterval(function(){
+            var x = Math.floor((Math.random() * images.length)); 
+       
+         $("#img1").attr("src",images[x])} ,2000);
+            
+         
+         
+});
+      
+        
+        </script>
+    </body>
+</html>
+ 
