@@ -20,10 +20,10 @@
         <br/>
         <br/>
         <br/>
-        <span id="Result"></span>
+        <span id="Result">AMOUNT:</span>
         
-        <P id="amt"></P>
-        <p id="disc"></p>
+        <P id="amt">DISCOUNT:</P>
+        <p id="disc">FINAL AMOUNT:</p>
     </form>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script>
@@ -35,12 +35,42 @@
        
       var total=UP*Quan;
       $("#Result").text(total);
-      
+      if(Quan>30 )
+{
+    discount=(0.3*total);
+    final=total-(0.3*total);
+}
+
+
+
+else if(Quan>20)
+{
+    discount=(0.2*total);
+    final=total-(0.2*total);
+
+}
+   else if  (Quan>10)
+{
+   
+    discount=(0.1*total);
+     final=total-(0.1*total);
+
+} else 
+{
+   
+    var final=total;
+    var discount=0;
+
+
+}
+$("#amt").text(discount) ;
+$("#disc").text(final) ;
+}
      
       
 
 
-}
+
 
 
         
