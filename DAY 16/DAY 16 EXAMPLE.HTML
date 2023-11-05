@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <form>
+        <label>Product Name:
+        </label>
+        <input type="text" name="pname" id="pname"/>
+        <br/>
+        <br/>
+        <label>Unit Price:
+        </label>
+        <input type="text" name="uprice" id="uprice"/>
+        <br/>
+        <br/>
+        <label>Quantity:
+        </label>
+        <input type="text" name="qnty" id="qnty" />
+        <br/>
+        <br/>
+        <input type="button" onclick="Submit()" value="Get Total"/>
+        <br/>
+        <br/>
+        <br/>
+        <span id="Result"></span>
+        
+        <P id="amt"></P>
+        <p id="disc"></p>
+    </form>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        function Submit()
+        { var UP= $("#uprice").val();
+          var Quan= $("#qnty").val();
+
+           
+       
+      var total=UP*Quan;
+      $("#Result").text(total);
+      
+     
+      
+
+
+}
+
+
+        
+    </script>
+</body>
+</html>
