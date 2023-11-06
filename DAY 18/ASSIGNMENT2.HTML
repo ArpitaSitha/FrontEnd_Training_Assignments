@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<HTML>
+    <head>
+
+    </head>
+    <body>
+INPUT STRING:<input type="text" id="txt" name="txt">
+<button type="button" id="btn">DISPLAY</button>
+<ul id="list1">
+    
+    
+</ul>
+    </body>
+</HTML>
+<script  src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+<script>
+    $(document).ready(function()
+
+        { $("button").click(function(){
+            
+            var arr=$("input").val().split(",");
+for(let items of arr)
+{
+str=`<li> ${items.toUpperCase()} </li>`;
+
+$("#list1").append(str);
+
+
+    
+}
+
+
+        });
+
+           
+        }
+    );
+
+</script>

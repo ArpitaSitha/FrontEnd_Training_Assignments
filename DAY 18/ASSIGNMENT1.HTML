@@ -1,0 +1,67 @@
+<html>
+    <head>
+<style>
+  .underline
+  { 
+    text-decoration: underline;
+  }
+  .bold
+  {
+    font-weight:bolder;
+  }
+  .italic
+  {
+    font-style: italic;
+  }
+ .active {
+ background-color: red;
+}
+  
+  </style>
+    </head>
+    <body>
+        <button type="button" id="u" value="underline" class="uline">U</button>
+        <button type="button" id="b" value="bold">B</button>
+        <button type="button" id="i" value="italic">I</button>
+        <p id="p1">This is a test paragraph.<br>This is a test paragraph.<br>This is a test paragraph.<br>This is a test paragraph.<br>This is a test paragraph.<br>This is a test paragraph.<br>This is a test paragraph.<br>This is a test paragraph.<br>This is a test paragraph.<br>This is a test paragraph.<br>This is a test paragraph.<br>This is a test paragraph.<br>This is a test paragraph.</p>
+    </body>
+</html>
+<script  src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+<script>
+$(document).ready(function()
+
+{ $("#u").click(function(){
+  $("#u").toggleClass( "active" );
+  
+
+  $("#p1").toggleClass("underline");
+ 
+});
+
+});
+$(document).ready(function()
+
+{ $("#b").click(function(){
+  
+
+  $("#b").toggleClass("active");
+  
+
+  $("#p1").toggleClass("bold");
+});
+
+});
+$(document).ready(function()
+
+{ $("#i").click(function(){
+ 
+
+  $("#i").toggleClass("active");
+ 
+  $("#p1").toggleClass("italic");
+});
+
+});
+
+
+</script>
