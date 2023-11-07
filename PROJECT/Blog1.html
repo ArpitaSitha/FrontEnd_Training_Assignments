@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        /* ... (your existing CSS) ... */
+.header-name
+{ float: left;
+ 
+padding-left: 0;
+margin-left:27px;
+
+}
+.top
+{
+  float:right;
+  margin-right: 28px;
+}
+.container-fluid
+{
+  margin: 0;
+}
+
+#lts
+{
+  text-decoration: none;
+  color: white;
+margin-left: -20px;
+  display:inline-block;
+  border:4px solid #0097b1;
+ 
+}
+.top
+{ 
+
+  
+  border:4px solid #0097b1;
+  
+}
+
+
+
+
+.navbar
+{ 
+  padding-bottom: 0;
+
+  background: linear-gradient(90deg,#00c1d2 0,#10489d 100%);
+}
+
+
+.navbar .navbar-nav .nav-link {
+  color: white;
+  font-size: 1.1em;
+}
+.navbar .navbar-nav .nav-link:hover{
+  color: #808080;
+}
+@media only screen and (min-width: 960px) {
+.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+}
+.dropdown .dropdown-menu {
+  display: none;
+}
+.dropdown:hover .dropdown-toggle::after {
+  border-bottom: 0.3em solid;
+  border-top: 0;
+}
+}
+@media screen and (max-width: 991px) {
+.dropdown-toggle.show::after {
+  border-top: 0;
+  border-bottom: 0.3em solid;
+}
+}
+        .btn {
+            border: gray;
+            background-color: hsl(194, 58%, 87%);
+            color: rgb(5, 5, 104);
+            font-weight: bold;
+            text-align: center;
+            padding: auto;
+            margin: 7px;
+        }
+
+        .container1 {
+            display: inline-block;
+        }
+
+        #p1 {
+            text-align: center;
+        }
+
+        body {
+            padding-left: 200px;
+        }
+
+        .banner {
+            position: relative;
+        }
+
+        .banner img {
+            object-fit: cover;
+        }
+
+        .banner .banner-text {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            align-items: start;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            color: #fff;
+            padding-left: 100px;
+            background-color: #2bbed7 !important;
+            background: linear-gradient(310deg, #0097b1 0, #2bbed7 100%) !important;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        .row {
+            display: flex;
+            flex-direction: row;
+            padding: 4px;
+        }
+
+        .column {
+            flex: 50%;
+            padding: 4px;
+        }
+
+        .column img {
+            margin-top: 8px;
+            vertical-align: middle;
+        }
+
+        .div1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        div img {
+            border: 2px solid white;
+            box-shadow: 3px 3px 2px black;
+            cursor: pointer;
+            margin: 0;
+            transition: 200ms;
+        }
+
+        .image-container {
+            position: relative;
+        }
+
+        .image-container img {
+            border: 2px solid white;
+            box-shadow: 3px 3px 2px black;
+            cursor: pointer;
+            margin: 0;
+            transition: 200ms;
+        }
+
+        .image-container:hover img {
+            filter: none;
+            transform: scale(1.2);
+            opacity: 1;
+            background-color:blue; /* Change background color to green on hover */
+        }
+
+        .image-label {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 5px 10px;
+            font-size: 16px;
+            opacity: 0;
+            transition: opacity 0.3s;
+            width: 100%;
+            text-align: center;
+            background-color: blue; /* Change background color to green */
+        }
+
+        .image-container:hover .image-label {
+            opacity: 1;
+
+        }
+
+        #footer {
+    background: #3a424f;
+    clear: both;
+    color: #ccc!important;
+    font-size: 92%;
+    padding: 30px;
+    margin: 15px;
+  }
+
+    #u1
+    {
+      list-style-type: none;
+    }
+
+        
+    </style>
+</head>
+  
+<div class="container-fluid">
+    <div class="row above">
+       <div class="header-name">
+           
+
+<a href="#"  id="lts"style="background-color: #2bbed7!important;
+background: linear-gradient(310deg,#0097b1 0,#2bbed7 100%)!important;"> Learn to Skydive</a>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <span>AUSTRALIAN PARACHUTE FEDERATION LTD </span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <span class="top" style="background-color: #2bbed7!important;
+          background: linear-gradient(310deg,#0097b1 0,#2bbed7 100%)!important;">
+           
+            <a href="#" style="text-decoration: none;color:white;">Home</a>&nbsp;&nbsp;&nbsp;
+            <a href="#" style="text-decoration: none;color:white;">Member Login</a>
+            &nbsp;&nbsp;
+<a href="#" style="text-decoration: none;color:white;">Proposed Changes Discussion</a>
+
+
+
+                
+              </span>
+             
+          
+
+       </div>
+       
+    </div>
+
+<br>
+
+<br>
+
+
+
+<nav  class=" navbar navbar-expand-sm bg-light " >
+
+
+
+
+<!-- hamburger menu -->
+<button 	class="navbar-toggler" type="button" 
+        data-bs-toggle="collapse" 
+        data-bs-target="#div1">
+  <span class="navbar-toggler-icon"></span>
+</button>
+
+
+  <!--menu items (in the navigation bar)-->
+
+<div class="collapse navbar-collapse" id="div1">
+
+  <ul class="navbar-nav ">
+    <li class="nav-item">
+      <a class="nav-link" href="#">TANDEM SKYDIVE</a>
+    </li>
+&nbsp;&nbsp;
+<!-- dropdown LEARN TO SKYDIVE -->
+    <li class="nav-item dropdown">
+      <a 	class="nav-link dropdown-toggle" href="#" id="navbardrop" 
+      data-bs-toggle="dropdown">
+      LEARN TO SKYDIVE
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">What I need to know</a>
+        <a class="dropdown-item" href="#">Reasons to learn</a>
+        <a class="dropdown-item" href="#">Where can I learn?</a>
+        <a class="dropdown-item" href="#">Opportunities</a>
+        <a class="dropdown-item" href="#">FAQ's</a>
+      </div>   
+  </li>
+  &nbsp;&nbsp;
+
+
+  <!-- SPORTS JUMPING -->
+
+  <li class="nav-item dropdown">
+    <a 	class="nav-link dropdown-toggle" href="#" id="navbardrop" 
+    data-bs-toggle="dropdown">
+   SPORTS JUMPING
+    </a>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Sport Jumping DZs</a>
+      <a class="dropdown-item" href="#">Events</a>
+      <a class="dropdown-item" href="#">CompetitionDisciplines</a>
+      <a class="dropdown-item" href="#">Australian Parachute</a>
+      <a class="dropdown-item" href="#">Australian Skydiver Magazine</a>
+      <a class="dropdown-item" href="#">Area Councils</a>
+      <a class="dropdown-item" href="#">Mentoring</a>
+      <a class="dropdown-item" href="#">Team</a>
+      <a class="dropdown-item" href="#">Learning</a>
+    </div>   
+</li>
+
+&nbsp;&nbsp;&nbsp;
+
+ <!--logo-->
+
+
+  <a class="navbar-brand" href="file:///C:/Users/arsitha/Desktop/PROJECT/HOME.html">		
+    <img src="apf-chr.png" height="90%" width="100%" >  
+  </a>
+
+  &nbsp;&nbsp;
+  <!-- dropdown WORKING IN SKYDIVING -->
+  <li class="nav-item dropdown">
+    <a 	class="nav-link dropdown-toggle" href="#" id="navbardrop" 
+    data-bs-toggle="dropdown">
+    WORKING IN SKYDIVING
+    </a>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Careers</a>
+      <a class="dropdown-item" href="#">Aircraft & Jump Pilots</a>
+      <a class="dropdown-item" href="#">Tandem Instructors</a>
+      
+    </div>   
+</li>
+&nbsp;&nbsp;
+
+  <!--MEMBERS-->
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="page2.html"  id="navbardrop" data-bs-toggle="dropdown">
+    MEMBERS
+   </a>
+   <div class="dropdown-menu">
+      <a class="dropdown-item" href="#"> Members</a>
+      <a class="dropdown-item" href="#"> Awards & Records</a>
+      <a class="dropdown-item" href="#"> Safety & Training</a>
+      <a class="dropdown-item" href="#"> Calendar of Events</a>
+      <a class="dropdown-item" href="#"> About</a>
+      <a class="dropdown-item" href="#"> Overseas Visitors Information</a>
+   </div>
+
+   &nbsp;&nbsp;
+
+
+
+<!--BLOG-->
+
+    
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">BLOG</a>
+  </li>
+  &nbsp;&nbsp;
+   <!--CONTACT-->
+  <li class="nav-item">
+    <a class="nav-link" href="#">CONTACT</a>
+  </li>
+     
+  
+
+
+</nav>
+
+
+<body class="px-2">
+    <!-- ... (your existing HTML) ... -->
+    
+    <div class="banner">
+      <img src="c:\Users\swsatapathy\Downloads\B1.jpg" width="100%" height="460">
+      <div class="banner-text">
+          <h1 class="fw-bold text-uppercase">LATEST NEWS</h1>
+      </div>
+  </div><br>
+
+  <p class="fw-bold">REFINE BY TOPIC</p>
+  <div class="container1">
+      <button type="button" class="btn">DZ DAYS</button>
+      <button type="button" class="btn">SAFETY INFORMATION</button>
+      <button type="button" class="btn">NEW JUMPERS</button>
+      <button type="button" class="btn">EVENTS</button>
+      <button type="button" class="btn">RING THE BELL</button>
+      <button type="button" class="btn">SKYDIVING STORIES</button>
+      <button type="button" class="btn">CAREER IN SKYDIVING</button>
+      <button type="button" class="btn">STATE</button>
+      <button type="button" class="btn">DISCIPLINE</button>
+      <button type="button" class="btn">SKYDIVING GEAR</button>
+  </div>
+  <br><br>    
+  <div>          
+    <div class="div1">
+  <div class="image-container">
+      <img src="https://www.apf.com.au/Images/UserUploadedImages/1460/Gear%20Check%20by%20TBH%20Media.jpg" alt="image " width="345px" height="350px" />
+      <div class="image-label">Back to Basics<br>Get the basics right, don't get complacent. By the APF Safety and Training Team.<br>30 OCT 2023
+      </div>
+  </div>
+  <div class="image-container">
+      <img src="https://www.apf.com.au/Images/UserUploadedImages/1460/Bellas%20by%20Michael%20Young%2002.jpg" width="355px" height="300px" />
+      <div class="image-label">State Championships: Get Involved!<br>
+          With State Championships around the corner, have you got your team together? If not, get involved!</div>
+      </div>
+
+  <div class="image-container"> 
+      <img src="https://www.apf.com.au/Images/UserUploadedImages/1460/Fun%20Jumpers%20at%20Skydive%20Oz%20by%20TBH%20Media.jpg" width="360px" height="350px" />
+      <div class="image-label">Ring The Bell: September 2023<br>
+          Congratulations are in order to the following APF members, who have recently achieved milestones in..<br>
+
+          10 OCT 2023</div>
+  </div>
+  <div class="image-container">    
+      <img src="https://www.apf.com.au/Images/UserUploadedImages/1460/Australia%20Speed%20and%20Wingsuit%20Team%20Hi%20Res.jpg" width="345px" height="300px" />
+      <div class="image-label">FAI World Cup 2023: Congratulations Team Australia<br>
+          With most of the 2023 FAI World Cups now complete, the Australian Parachute Federation would like to.<br>
+          
+          6 OCT 2025</div>
+  </div>    
+  <div class="image-container">
+      <img src="https://www.apf.com.au/Images/UserUploadedImages/1460/Load%20Organising.jpg" width="355px" height="350px" />
+      <div class="image-label">Gear Checks: Have A System!<br>
+          Like many aspects of skydiving, if you don't want things to be missed, make sure you have a system..<br>
+          
+          5 OCT 2023</div>
+  </div>
+  <div class="image-container">  
+      <img src="https://www.apf.com.au/Images/UserUploadedImages/1460/Gear%20Checks%20by%20Kim%20Brooks.jpg" width="360px" height="300px" />
+      <div class="image-label">Routine Opening Problems<br>
+          Identifying "routine opening problems" and knowing how to resolve them. By Charl Rootman, APF Safety-<br>
+          
+          5 OCT 2023</div>
+  </div>
+  <div class="image-container">    
+      <img src="https://www.apf.com.au/Images/UserUploadedImages/1460/side-by-side-cutaways.png" width="345px" height="320px" />
+      <div class="image-label">Safety: Skydiving's Four-Letter Word<br>
+
+          Written by Charl Rootman, APF Safety and Training Manager, in July 2022<br>
+          
+          5 OCT 2023</div>
+  </div>
+  <div class="image-container">    
+      <img src="https://www.apf.com.au/Images/UserUploadedImages/1460/Line%20Twists-2.png" width="355px" height="320px" />
+      <div class="image-label">The MARD Effect, By Brett Newman MARD stands for Main Assisted Reserve Deployment' But what does that actually mean?<br>
+
+          16 SEP 2023</div>
+  </div>    
+  <div class="image-container">         
+      <img src="https://www.apf.com.au/Images/UserUploadedImages/1460/Dale%20and%20Brent%20at%20Townsville%20copy.jpg" width="360px" height="320px" />
+      <div class="image-label">APF Receives $90,000 Funding from Queensland Government<br>
+          Following the approval of $90,000 funding from the Queensland Govelhment to the Australian Parachute-<br>
+          
+          4 SEP 2023</div>
+  </div>
+  <div class="image-container">          
+      <img src="https://www.apf.com.au/Images/UserUploadedImages/1460/Fun%20Jumpers%20at%20Skydive%20Oz%20by%20TBH%20Media.jpg" width="345px" height="320px" />
+      <div class="image-label">Ring The Bell: August 2023<br>
+          Congratulations are in order to the following APF members, who have recently achieved milestones in.<br>
+          
+          1 SEP 2023</div>
+  </div>
+  <div class="image-container">                      
+      <img src="https://www.apf.com.au/Images/UserUploadedImages/1460/WA%20POPS%20Record%20Jump%202%20by%20Heath%20Baird%20(2).jpg" width="355px" height="320px" />
+      <div class="image-label">Father's Day Story<br>
+          Happy Father's Day to all of the skydiving Dads out there, including Dale Findlay and his father, Br-<br>
+          
+          29 AUG 2023</div>
+  </div>
+  <div class="image-container">                    
+      <img src="https://www.apf.com.au/Images/UserUploadedImages/1460/QLD%20Funding%20Cover%20Image.png" width="360px" height="320px" />
+      <div class="image-label">WA POPS Achieve a New Record!<br>
+          Congratulations to the Parachutists Over Phorty crew in WA, who achieved a new POPS record on Saturd<br>
+          
+          28 AUG 2023</div>
+  </div>
+  <div class="image-container">           
+      <img src="https://www.apf.com.au/Images/UserUploadedImages/1460/Screen%20Shot%202023-07-29%20at%2021.34.28.png" width="345px" height="320px" />
+      <div class="image-label">Ring The Bell: May to July 2023<br>
+          Congratulations are in order to the following APF members, who have recently achieved milestones in<br>
+          
+          1 AUG 2023</div>
+  </div>
+  <div class="image-container">                
+      <img src="https://www.apf.com.au/Images/UserUploadedImages/1460/Cameron%20Olivieri%20at%20Skydive%20Uluru-2.jpg" width="355px" height="320px" />
+      <div class="image-label">Fun Skydive Ideas for Newer Jumpers<br>
+          Have fun in the sky and finesse your skills with these mapped out skydives!<br>
+          
+          29 JUL 2023</div>
+  </div>
+  <div class="image-container">                       
+      <img src="https://www.apf.com.au/Images/UserUploadedImages/1460/Skydive%20Oz-2.jpg" width="360px" height="320px" />
+      <div class="image-label">How I Became A Skydiving Instructor In Just 14 Months, by Cameron Olivieri<br>
+          Cameron Olivieri shares his story of learning to skydive, working in the industry and becoming an in..<br>
+          
+          20 JUL 2023</div>
+  </div>
+  <div class="image-container">                     
+      <img src="https://www.apf.com.au/Images/UserUploadedImages/1460/Fun%20Jumpers%20at%20Skydive%20Oz%20by%20TBH%20Media.jpg" width="345px" height="300px" />
+      <div class="image-label">for fourth image FAI World Cup 2023: Congratulations Team Australia<br>
+          With most of the 2023 FAI World Cups now complete, the Australian Parachute Federation would like to.<br>
+          
+          6 OCT 2025</div>
+  </div>
+  <div class="image-container">     
+      <img src="https://www.apf.com.au/Images/UserUploadedImages/1460/AFF%20Skydive%20Ramblers-2.jpg" width="355px" height="350px" />
+      <div class="image-label">Career Pathways in Skydiving<br>
+          Skydiving has a whole host of career pathways available to people who love adventure. Read on to fin..<br>
+          
+          12 JUL 2023</div>
+  </div>
+  <div class="image-container">              
+      <img src="https://www.apf.com.au/Images/UserUploadedImages/1460/FSUTest.png" width="360px" height="300px" />
+      <div class="image-label">Canopy Flocking: How to Get Started, by Zack Rosser<br>
+          Keen to learn more about flocking? Here are some tips from top canopy coach, Zack Rosser, to get you -<br>
+          
+          12 JUL 2023</div>
+  </div>
+  <div class="image-container">    
+      <img src="https://www.apf.com.au/Images/UserUploadedImages/1460/20230710_113512-2.jpg" width="345px" height="320px" />
+      <div class="image-label">Your Top Questions About the World of Skydiving!<br>
+          Your Top Questions About the World of Skydiving, Answered Here!<br>
+          
+          20 JUL 2023</div>
+  </div>
+  <div class="image-container">                        
+      <img src="https://www.apf.com.au/Images/UserUploadedImages/1460/SOS%2030way%20by%20Steve%20Fitchett.jpg" width="355px" height="320px" />
+      <div class="image-label">Seniors of the Sky: Skydivers Over Sixty Set New Record!<br>
+          Congratulations are in order for the Skydivers Over Sixty crew, who recently achieved a new SOS reco-<br>
+          
+          13 JUL 2023</div>
+  </div>     
+  <div class="image-container">
+      <img src="https://www.apf.com.au/Images/UserUploadedImages/1460/Snapinsta.app_342346018_915851722801901_6459843100965490504_n_1080-3.jpg" width="360px" height="320px" />
+      <div class="image-label">What Learning to Skydive Involves<br>
+          Do you want to learn to skydive, or do you know someone who does? The Accelerated Freefall Course is -<br>
+          What Is Can Kill Brett New<br>
+          
+          12 JUL 2023</div>
+        </div> 
+  </div>
+  </div>
+
+<!--footer SECTION-->
+<div id="footer" class="padding-all-full light">
+    <div class="row">
+       <div class="col-xs-12 col-lg-3 padding-all-mid">
+          <div class="logos">
+             
+
+
+<a title="FAI Parachuting Commission" target="_blank" href="http://www.fai.org/"><img src="footer.png" width="60%" height="60%"></a><br>
+
+
+
+          </div>
+       </div>
+       <div class="col-xs-12 col-lg-3 padding-all-mid">
+          
+
+<h4>CONTACT</h4>
+<p>Site Address:<br>
+Unit 3, Portal Office West, <br>
+2994&nbsp;Logan Road,&nbsp;Underwood <br>
+Queensland 4119, Australia</p>
+<p>Phone: +61 7 3457 0100<br>
+(International: +61 7 3457 0100)
+</p>
+<p>Postal Address: <br>
+Po Box 1440, Springwood<br>
+Queensland 4127, Australia</p>
+<p>Copyright &copy; 2021 Australian Parachute Federation<br>
+<a href="#" title="Elcom - Enterprise Web Content Management Systems" style="text-decoration: none;color:white">Web Content Management</a> by <a href="#" title="Elcom" style="text-decoration: none;color:white">Elcom</a>
+</p>
+
+
+       </div>
+       <div class="col-xs-12 col-lg-3 padding-all-mid">
+          
+
+<div style="display: none;"></div>
+<h4>USEFUL LINKS</h4>
+<ul id="u1">
+<li><a href="#" style="text-decoration: none;color:  #ccc!important;">Terms of Use</a></li>
+<li><a href="#" style="text-decoration: none;color:  #ccc!important;">Privacy Policy</a></li>
+<li><a href="#"style="text-decoration: none;color:  #ccc!important;">Refund Policy</a></li>
+<li><a href="#" style="text-decoration: none;color:  #ccc!important;">Site Admin Login</a></li>
+<li><a  href="#" style="text-decoration: none;color:  #ccc!important;">Committee Login</a></li>
+<li><a href="#" style="text-decoration: none;color:  #ccc!important;">APF Staff Portal</a></li>
+</ul>
+
+
+       </div>
+       <div class="col-xs-12 col-lg-3 padding-all-mid">
+          
+
+<h4>SUBSCRIBE TO GET INTO SKYDIVING</h4>
+<p>Interested in Learning to Skydive Solo? Receive relevant information and exclusive promotions.</p>
+<p><a href="http://eepurl.com/g4lljX" class="btn btn-primary" target="_blank" >Join to receive a free copy</a></p>
+
+
+
+<p class="small">We respectfully acknowledge the traditional custodians of the lands, skies and waters of Australia. <br>
+We are committed to inclusive communities.</p>
+<img src="flags.png" alt="flags" width="119" height="24">
+
+
+       </div>
+    </div>
+ </div>
+ </div>
+<div> <!-- Required elements which were missing (Added by CM to ensure masterpage integrity) -->
+</div>
+</body>
+
+</html>

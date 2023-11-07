@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="Style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        .header-name
+{ float: left;
+ 
+padding-left: 0;
+margin-left: 30px;
+}
+.top
+{ margin-right: 30px;
+  float:right;
+}
+.container-fluid
+{
+  margin: 0;
+}
+
+/*
+.social-icons
+{
+  list-style: none;
+ 
+}
+
+#l1{
+  float:left;
+padding: 10px;
+}
+*/
+#lts
+{
+  text-decoration: none;
+  color: white;
+margin-left: -20px;
+  display:inline-block;
+  border:4px solid #0097b1;
+ 
+}
+.top
+{ 
+
+  
+  border:4px solid #0097b1;
+  
+}
+
+
+
+
+.navbar
+{
+  padding-bottom: 0;
+
+  background: linear-gradient(90deg,#00c1d2 0,#10489d 100%);
+}
+
+
+.navbar .navbar-nav .nav-link {
+  color: white;
+  font-size: 1.1em;
+}
+.navbar .navbar-nav .nav-link:hover{
+  color: #808080;
+}
+@media only screen and (min-width: 960px) {
+.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+}
+.dropdown .dropdown-menu {
+  display: none;
+}
+.dropdown:hover .dropdown-toggle::after {
+  border-bottom: 0.3em solid;
+  border-top: 0;
+}
+}
+@media screen and (max-width: 991px) {
+.dropdown-toggle.show::after {
+  border-top: 0;
+  border-bottom: 0.3em solid;
+}
+}
+
+        textarea {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .banner
+{
+    position: relative;
+}
+        .banner img
+{
+    object-fit: cover;
+    background-color: #2bbed7!important;
+    background: linear-gradient(310deg,#0097b1 0,#2bbed7 100%)!important;
+}
+
+        .banner .banner-text {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            align-items: start;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            color: #fff;
+            padding-left: 100px;
+            background-color: #2bbed7 !important;
+            background: linear-gradient(310deg, #0097b1 0, #2bbed7 100%) !important;
+        }
+        .btn1
+{
+    background-image: linear-gradient(310deg,#0097b1 0,#2bbed7 100%)!important;
+}
+#footer {
+    background: #3a424f;
+    clear: both;
+    color: #ccc!important;
+    font-size: 92%;
+    padding: 30px;
+  }
+
+    #u1
+    {
+      list-style-type: none;
+    }
+
+    </style>
+</head>
+
+<body class="px-2">
+    <div class="container-fluid">
+        <div class="row above">
+           <div class="header-name">
+               
+
+<a href="#"  id="lts"style="background-color: #2bbed7!important;
+background: linear-gradient(310deg,#0097b1 0,#2bbed7 100%)!important;"> Learn to Skydive</a>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <span>AUSTRALIAN PARACHUTE FEDERATION LTD </span> 
+              <span class="top" style="background-color: #2bbed7!important;
+              background: linear-gradient(310deg,#0097b1 0,#2bbed7 100%)!important;">
+               
+                <a href="#" style="text-decoration: none;color:white;">Home</a>&nbsp;&nbsp;&nbsp;
+                <a href="#" style="text-decoration: none;color:white;">Member Login</a>
+                &nbsp;&nbsp;
+    <a href="#" style="text-decoration: none;color:white;">Proposed Changes Discussion</a>
+    
+    
+    
+                    
+                  </span>
+                 
+              
+<!--
+<ul class="social-icons" >
+<li id="l1"><a href="https://www.facebook.com/apfskydive/" target="_blank" title="Facebook"><i class="bi bi-facebook"></i></a></li>
+<li id="l1"><a href="https://twitter.com/APFSkydive" target="_blank" title="Twitter"><i class="bi bi-twitter"></i></a></li>
+<li id="l1" ><a href="https://www.instagram.com/apfskydive/" target="_blank" title="Instagram"><i class="bi bi-instagram"></i></a></li>
+</ul>
+
+-->
+           </div>
+           
+        </div>
+
+<br>
+
+<br>
+
+
+
+<nav  class=" navbar navbar-expand-sm bg-light " >
+
+  
+    
+    
+    <!-- hamburger menu -->
+    <button 	class="navbar-toggler" type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#div1">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    
+      <!--menu items (in the navigation bar)-->
+
+    <div class="collapse navbar-collapse" id="div1">
+    
+      <ul class="navbar-nav ">
+        <li class="nav-item">
+          <a class="nav-link" href="#">TANDEM SKYDIVE</a>
+        </li>
+&nbsp;&nbsp;
+<!-- dropdown LEARN TO SKYDIVE -->
+        <li class="nav-item dropdown">
+          <a 	class="nav-link dropdown-toggle" href="#" id="navbardrop" 
+          data-bs-toggle="dropdown">
+          LEARN TO SKYDIVE
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">What I need to know</a>
+            <a class="dropdown-item" href="#">Reasons to learn</a>
+            <a class="dropdown-item" href="#">Where can I learn?</a>
+            <a class="dropdown-item" href="#">Opportunities</a>
+            <a class="dropdown-item" href="#">FAQ's</a>
+          </div>   
+      </li>
+      &nbsp;&nbsp;
+
+
+      <!-- SPORTS JUMPING -->
+
+      <li class="nav-item dropdown">
+        <a 	class="nav-link dropdown-toggle" href="#" id="navbardrop" 
+        data-bs-toggle="dropdown">
+       SPORTS JUMPING
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Sport Jumping DZs</a>
+          <a class="dropdown-item" href="#">Events</a>
+          <a class="dropdown-item" href="#">CompetitionDisciplines</a>
+          <a class="dropdown-item" href="#">Australian Parachute</a>
+          <a class="dropdown-item" href="#">Australian Skydiver Magazine</a>
+          <a class="dropdown-item" href="#">Area Councils</a>
+          <a class="dropdown-item" href="#">Mentoring</a>
+          <a class="dropdown-item" href="#">Team</a>
+          <a class="dropdown-item" href="#">Learning</a>
+        </div>   
+    </li>
+
+    &nbsp;&nbsp;&nbsp;
+
+     <!--logo-->
+    
+
+      <a class="navbar-brand" href="file:///C:/Users/arsitha/Desktop/PROJECT/HOME.html">		
+        <img src="apf-chr.png" height="90%" width="100%" >  
+      </a>
+
+      &nbsp;&nbsp;
+      <!-- dropdown WORKING IN SKYDIVING -->
+      <li class="nav-item dropdown">
+        <a 	class="nav-link dropdown-toggle" href="#" id="navbardrop" 
+        data-bs-toggle="dropdown">
+        WORKING IN SKYDIVING
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Careers</a>
+          <a class="dropdown-item" href="#">Aircraft & Jump Pilots</a>
+          <a class="dropdown-item" href="#">Tandem Instructors</a>
+          
+        </div>   
+    </li>
+    &nbsp;&nbsp;
+
+      <!--MEMBERS-->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="page2.html"  id="navbardrop" data-bs-toggle="dropdown">
+        MEMBERS
+       </a>
+       <div class="dropdown-menu">
+          <a class="dropdown-item" href="#"> Members</a>
+          <a class="dropdown-item" href="#"> Awards & Records</a>
+          <a class="dropdown-item" href="#"> Safety & Training</a>
+          <a class="dropdown-item" href="#"> Calendar of Events</a>
+          <a class="dropdown-item" href="#"> About</a>
+          <a class="dropdown-item" href="#"> Overseas Visitors Information</a>
+       </div>
+
+       &nbsp;&nbsp;
+
+
+
+<!--BLOG-->
+
+        
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Blog1.html">BLOG</a>
+      </li>
+      &nbsp;&nbsp;
+       <!--CONTACT-->
+      <li class="nav-item">
+        <a class="nav-link" href="#">CONTACT</a>
+      </li>
+         
+      
+
+
+</nav>
+<br>
+
+
+
+    <div class="banner">
+        <img src="c:\Users\swsatapathy\Downloads\B1.jpg" width="100%" height="460">
+        <div class="banner-text">
+            <h1 class="fw-bold">CONTACT</h1>
+        </div>
+    </div>
+
+    <P>Please see details below to contact our friendly and efficient staff for all your inquiries.</P>
+    <p>Australian Parachute Federation Ltd</p>
+    <p class="fw-bold">Site Address
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unit 3, Portal Office West, 2994 Logan Road,<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Underwood Queensland 4119, Australia</span>
+    </p>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7070.7128999158085!2d153.120655!3d-27.613475!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b914382aa65de51%3A0x57df19985a968b74!2sAustralian%20Parachute%20Federation!5e0!3m2!1sen!2sus!4v1698506908568!5m2!1sen!2sus"
+        width="90%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <br>
+    <p class="fw-bold">Postal Address
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;
+            Po Box 1440, Springwood Queensland 4127, Australia</span>
+    </p>
+    <p class="fw-bold">Telephone
+        <span>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 07 3457 0100 (International: +61 7 3457
+            0100)
+        </span>
+    </p>
+    <br>
+    <p class="fw-bold" id="p1">SEND US A MESSAGE</p>
+    <br>
+    <p class="fw-bold">SEND US A MESSAGE</p>
+    <br>
+    <form id="form1" class="needs-validated" action="######" method="get">
+        <fieldset class="border-dark" style="border: 2px solid black;">
+            <legend class="button bg-info fw-bold" style="color: rgb(7, 7, 44);">Your Details</legend>
+            <span class="fw-bold">Your Name* </span> <input type="text" required>
+            <div class="invalid-feedback">Please fill out this field.</div>
+            <br><br>
+            <span class="fw-bold">Email Address* </span> <input type="email" required>
+            <div class="invalid-feedback">Please fill out this field.</div>
+            <br><br>
+            <span class="fw-bold"> Contact Number</span> <input type="number"><br><br>
+        </fieldset> <br><br>
+        <fieldset class="border-dark" style="border: 2px solid black;">
+            <legend class="button bg-info fw-bold" style="color: rgb(7, 7, 44);">Your Enquiry</legend> <br>
+            <h5>Your Messages...*</h5><span>
+                <textarea cols="90" rows="10" required></textarea></span>
+            <div class="invalid-feedback">Please fill out this field.</div> <br><br>
+        </fieldset>
+        <p>Please do not upload documents that may contain private information to this form (such as application forms).
+            These files should be emailed directly to the APF at apf@apf.com.au.</p>
+        <br>
+        <p class="fw-bold">Attachment 1 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="file"
+                accept=".doc , .txt , .pdf , .htm , .pptx , .mpg , .mp3 , .mp4 , .wmv , .flv , .docx ,.xlsx, .dot , .xlsx , .xlt , .ppt , .png , .gif , .jpeg , .jpg">
+        </p>
+        <p class="fw-bold">Attachment 2 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="file"
+                accept=".doc , .txt , .pdf , .htm , .pptx , .mpg , .mp3 , .mp4 , .wmv , .flv , .docx ,.xlsx, .dot , .xlsx , .xlt , .ppt , .png , .gif , .jpeg , .jpg">
+        </p>
+        <p class="fw-bold">Attachment 3 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="file"
+                accept=".doc , .txt , .pdf , .htm , .pptx , .mpg , .mp3 , .mp4 , .wmv , .flv , .docx ,.xlsx, .dot , .xlsx , .xlt , .ppt , .png , .gif , .jpeg , .jpg">
+        </p>
+        <hr>
+        <span>
+            <img src="MicrosoftTeams-image.png" height="50" width="120">
+            &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" placeholder="Type the captcha"><br>
+            <a href="###">refresh</a>&nbsp; &nbsp;&nbsp;
+            <a href="##">Get Audio Code</a>
+            <br><br>
+            <p>Mandatory field(s) marked with *</p>
+
+            <button type="submit" class="btn btn1 text-light" onclick="b1()">CONTACT</button>
+    </form>
+
+    <hr>
+    <h2>APF OFFICE CONTACTS</h2>
+    <table class="table1">
+        <tr class="bg-dark text-light">
+            <th colspan="3">For Membership / General enquires or to contact any of the people below, please fill in our
+                the contact form for the member you wish to contact.</th>
+        </tr>
+        <tr class="even-row">
+            <td>Chief Executive Officer</td>
+            <td>Richard McCooey</td>
+            <td><a href="CEO.html"><button type="button"
+                        class="btn btn-info btn1 text-light">CONTACT</button></a> </td>
+        </tr>
+        <tr class="odd-row">
+            <td>Safety & Training</td>
+            <td>Charl Rootman</td>
+            <td><a href="Safety.html"> <button type="button"
+                        class="btn btn-info btn1 text-light">CONTACT</button></a></td>
+        </tr>
+        <tr class="even-row">
+            <td>Sport Development</td>
+            <td>Brigitte Jones</td>
+            <td><a href="Devlopment.html"> <button type="button"
+                        class="btn btn-info btn1 text-light">CONTACT</button></a></td>
+        </tr>
+        <tr class="odd-row">
+            <td>Operations</td>
+            <td>Wade Challenor </td>
+            <td><a href="Operation.html"> <button type="button"
+                        class="btn btn-info btn1 text-light">CONTACT</button></a></td>
+        </tr>
+        <tr class="even-row">
+            <td>Technical</td>
+            <td>Ria Dobson</td>
+            <td><a href="Technical.html"><button type="button"
+                        class="btn btn-info btn1 text-light">CONTACT</button></a></td>
+        </tr>
+        <tr class="odd-row">
+            <td>National Coach (Acting)</td>
+            <td>CEO (pending NC reappointment)</td>
+            <td><a href="NationalCoach.html"><button type="button"
+                        class="btn btn-info btn1 text-light">CONTACT</button></a> </td>
+        </tr>
+        <tr class="even-row">
+            <td>Accounts</td>
+            <td>Megan Seeto</td>
+            <td><a href="Accounts.html"><button type="button"
+                        class="btn btn-info btn1 text-light">CONTACT</button></a></td>
+        </tr>
+        <tr class="odd-row">
+            <td>Administration</td>
+            <td> Jenny Larkin, Sandy Jappe,
+                Lisa Perkins, Melanie Greenbank</td>
+            <td><a href="Administration.html"> <button type="button"
+                        class="btn btn-info btn1 text-light">CONTACT</button></a></td>
+        </tr>
+        <tr class="even-row">
+            <td>Trauma Counselling Contact</td>
+            <td>Jenny Larkin</td>
+            <td><a href="Trauma.html"> <button type="button"
+                        class="btn btn-info btn1 text-light">CONTACT</button></a></td>
+        </tr>
+        <tr class="odd-row">
+            <td>Contact Officer</td>
+            <td>Jenny Larkin</td>
+            <td><a href="ContactOfficer.html"><button type="button"
+                        class="btn btn-info btn1 text-light">CONTACT</button></a></td>
+        </tr>
+    </table>
+    <hr>
+    <h2>SAFETY AND TRAINING OFFICERS</h2>
+    <table class="table2">
+        <tr class="bg-dark text-light">
+            <th>Position</th>
+            <th>Name</th>
+            <th>Phone</th>
+            <th>Email</th>
+        </tr>
+        <tr>
+            <td><span class="fw-bold">Safety & Training Officer</span><br>
+                (NQPC, SQPC)</td>
+            <td>Luke Oliver</td>
+            <td>0429 020 865</td>
+            <td><a href="mailto:luke.oliver@apf.com.au"><button type="button"
+                        class="btn btn-primary bg-light btn-link">Contact</a></button></td>
+        </tr>
+        <tr>
+            <td><span class="fw-bold">Safety & Training Officer</span><br>
+                (NSWPC, SAPC)</td>
+            <td>Mike Tibbitts</td>
+            <td>0458 753 854</td>
+            <td><a href="mailto:mike.tibbitts@apf.com.au"><button type="button"
+                        class="btn btn-primary bg-light btn-link">Contact</button></a></td>
+        </tr>
+        <tr>
+            <td><span class="fw-bold">Safety & Training Officer</span><br>
+                (VTPC, WAPC, NTPC)</td>
+            <td>Chippe Lindberg</td>
+            <td>0458 546 077</td>
+            <td><a href="mailto:chippe.lindberg@apf.com.au"><button type="button"
+                        class="btn btn-primary bg-light btn-link">Contact</a></button></td>
+        </tr>
+    </table>
+    <hr>
+    <h2>QUESTIONS ? NEED MORE INFORMATION ?</h2>
+    <ul>
+        <li>Overseas visitors can find a lot of information about Australian jumping standards, ratings, and equipment
+            requirements in the<a href="###"> Visitors and non-APF jumpers</a> section.<br>
+            We have tried to answer general questions about on the FAQ Page. More questions can be answered through your
+            local Drop zone or Club. Information about how the APF and skydiving got started can be answered by<a
+                href="###"> Clicking Here</a>.</li>
+        <li>Technical questions can be directed towards the APF Office.</li>
+        <li>APF Office Staff also deal with licensing and rating questions.</li>
+        <li>Questions about APF Board decisions should be directed towards the <a href="###">Board Chair</a>, or the <a
+                href="###">Executive Assistant</a>. Both are able to direct you to the appropriate Director if more
+            information is required.<br>
+            If you are not sure who you need to talk to just contact the APF Office and we will direct you to the
+            appropriate person.</li>
+        <li>Matters regarding this website (e.g. equipment for sale, changed contact details for clubs, etc.) can be
+            directed to the APF Office.</li>
+    </ul>
+    <!--footer SECTION-->
+<div id="footer" class="padding-all-full light">
+    <div class="row">
+       <div class="col-xs-12 col-lg-3 padding-all-mid">
+          <div class="logos">
+             
+
+
+<a title="FAI Parachuting Commission" target="_blank" href="http://www.fai.org/"><img src="footer.png" width="60%" height="60%"></a><br>
+
+
+
+          </div>
+       </div>
+       <div class="col-xs-12 col-lg-3 padding-all-mid">
+          
+
+<h4>CONTACT</h4>
+<p>Site Address:<br>
+Unit 3, Portal Office West, <br>
+2994&nbsp;Logan Road,&nbsp;Underwood <br>
+Queensland 4119, Australia</p>
+<p>Phone: +61 7 3457 0100<br>
+(International: +61 7 3457 0100)
+</p>
+<p>Postal Address: <br>
+Po Box 1440, Springwood<br>
+Queensland 4127, Australia</p>
+<p>Copyright &copy; 2021 Australian Parachute Federation<br>
+<a href="#" title="Elcom - Enterprise Web Content Management Systems" style="text-decoration: none;color:white">Web Content Management</a> by <a href="#" title="Elcom" style="text-decoration: none;color:white">Elcom</a>
+</p>
+
+
+       </div>
+       <div class="col-xs-12 col-lg-3 padding-all-mid">
+          
+
+<div style="display: none;"></div>
+<h4>USEFUL LINKS</h4>
+<ul id="u1">
+<li><a href="#" style="text-decoration: none;color:  #ccc!important;">Terms of Use</a></li>
+<li><a href="#" style="text-decoration: none;color:  #ccc!important;">Privacy Policy</a></li>
+<li><a href="#"style="text-decoration: none;color:  #ccc!important;">Refund Policy</a></li>
+<li><a href="#" style="text-decoration: none;color:  #ccc!important;">Site Admin Login</a></li>
+<li><a  href="#" style="text-decoration: none;color:  #ccc!important;">Committee Login</a></li>
+<li><a href="#" style="text-decoration: none;color:  #ccc!important;">APF Staff Portal</a></li>
+</ul>
+
+
+       </div>
+       <div class="col-xs-12 col-lg-3 padding-all-mid">
+          
+
+<h4>SUBSCRIBE TO GET INTO SKYDIVING</h4>
+<p>Interested in Learning to Skydive Solo? Receive relevant information and exclusive promotions.</p>
+<p><a href="http://eepurl.com/g4lljX" class="btn btn-primary" target="_blank" >Join to receive a free copy</a></p>
+
+
+
+<p class="small">We respectfully acknowledge the traditional custodians of the lands, skies and waters of Australia. <br>
+We are committed to inclusive communities.</p>
+<img src="flags.png" alt="flags" width="119" height="24">
+
+
+       </div>
+    </div>
+ </div>
+ </div>
+<div> <!-- Required elements which were missing (Added by CM to ensure masterpage integrity) -->
+</div>
+
+    <script>
+        function b1() {
+            var formObj = document.getElementById("form1");
+            formObj.classList.add("was-validated");
+
+            // var paraObj = document.getElementById("p1");
+
+        }
+    </script>
+    <!--
+<header>
+    <h2 class="head">Home/Contact</h2>
+</header>
+<footer>
+    <div class="footer-container">
+        <div class="footer-column">
+        </div>
+        <div class="aus">
+           <a href="http://www.ausport.gov.au/"><img src="https://www.ais.gov.au/__data/assets/image/0018/1005183/ASC-logo.png"/></a> <br>
+            <br><br>
+          <a href="http://www.fai.org/" ><img src="https://ww2.freelogovectors.net/wp-content/uploads/2018/05/fai-logo.png?lossy=1&w=2560&ssl=1" /></a><br>
+           <br><br>
+           <a href="http://www.casa.gov.au/scripts/nc.dll?WCMS:HOMEPAGE::pc=HOME"><img src="data:image/png;base64,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">
+        </a>
+        </div>
+        <div class="footer-column">
+            <h2>Contact</h2>
+            <pre class="inpre">Site Address:
+            <p>Unit 3, Portal Office West,<br>
+            2994 Logan Road, Underwood<br>
+            Queensland 4119, Australia</pre><br><br>
+            <pre class="inpre">Phone: +61 7 3457 0100<br>(International: +61 7 3457 0100)</pre><br>
+            <pre class="inpre"><br>Postal Address:
+            Po Box 1440, Springwood Queensland 4127, Australia</pre><br>
+            <pre class="inpre">&copy; 2021 Australian Parachute Federation</p>
+            <p>Web Content Management by Elcom</pre>
+        </div>
+        <div class="footer-column">
+            <h2>Useful Links</h2>
+            <ul>
+                <li><a href="https://www.apf.com.au/Home/Disclaimer" id="a1">Terms of Use</a></li><br>
+                <li><a href="#" id="a1">Privacy Policy</a></li><br>
+                <li><a href="#" id="a1">Refund Policy</a></li><br>
+                <li><a href="#" id="a1">Site Admin Login</a></li><br>
+                <li><a href="#" id="a1">Committee Login</a></li><br>
+                <li><a href="#" id="a1">APF Staff Portal</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h2>SUBSCRIBE TO GET INTO SKYDIVING</h2>
+            <pre class="inpre">Interested in Learning to Skydive Solo? Receive relevant information and exclusive promotions.</pre>
+            <div class="subscribe-box">
+                 <a href="http://eepurl.com/g4lljX" style="color: white; text-decoration: none;">JOIN TO RECEIVE A FREE COPY</a>
+            </div><br>
+            <pre class="inpre">We respectfully acknowledge the traditional custodians of the lands, skies, and waters of Australia.</pre>
+               <p> We are committed to inclusive communities.</p>
+
+            <div class="flag">
+            <img src="https://qph.cf2.quoracdn.net/main-qimg-d29d25d60d14a71a62fcb0f32644a35a">
+            <img src="https://cdn.britannica.com/64/5064-004-FEF780F0/Flag-Mauritania.jpg">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Flag_of_South_Africa.svg/800px-Flag_of_South_Africa.svg.png">
+        </div>
+        </div>
+    </div>
+</footer> -->
+
+</body>
+
+</html>
